@@ -2,7 +2,6 @@
 require __DIR__.'/classes/Movie.php';
 
 $movieList = [$inception, $piratesOfCaribbean];
-
 ?>
 
 <!DOCTYPE html>
@@ -13,9 +12,13 @@ $movieList = [$inception, $piratesOfCaribbean];
     <title>Document</title>
 </head>
 <body>
+    <h1>Movies:</h1>
     <?php
         foreach ($movieList as $key => $value) {
-           echo var_dump($value, $key);
+           echo var_dump($value, $key); ?>
+           <br> 
+           <hr>
+           <?php
         };
     ?>
 </body>
