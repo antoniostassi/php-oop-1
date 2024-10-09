@@ -12,10 +12,9 @@ $movieList = [$inception, $piratesOfCaribbean];
     <title>Document</title>
 </head>
 <body>
-    <h1>Movies:</h1>
     <?php
         foreach ($movieList as $key => $value) {
-           echo var_dump($value, $key); ?>
+           echo "<h1>".$value->title."</h1>"; var_dump($value, $key); ?>
            <br> 
            <hr>
            <?php

@@ -3,7 +3,7 @@
 class Movie {
 
     // tutte le variabili definite come private non saranno accessibili se non dalla classe stessa, dunque tramite il costruttore o i metodi.
-    private $title;
+    public $title;
     private $author;
     private $year; 
     private $language;
