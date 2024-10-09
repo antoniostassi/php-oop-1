@@ -1,4 +1,9 @@
-<?php ?>
+<?php 
+require __DIR__.'/classes/Movie.php';
+
+$movieList = [$inception, $piratesOfCaribbean];
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -8,6 +13,10 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <?php
+        foreach ($movieList as $key => $value) {
+           echo var_dump($value, $key);
+        };
+    ?>
 </body>
 </html>
